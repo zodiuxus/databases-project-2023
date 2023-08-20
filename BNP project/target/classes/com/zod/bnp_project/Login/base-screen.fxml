@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zod.bnp_project.Login.LoginHandler">
+   <left>
+      <AnchorPane minHeight="700.0" minWidth="400.0" prefHeight="700.0" prefWidth="400.0" style="-fx-background-color: '4A4A4A';" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="68.0" layoutY="260.0" prefHeight="170.0" prefWidth="267.0" style="-fx-background-color: '4a4a4a';" AnchorPane.bottomAnchor="270.0" AnchorPane.leftAnchor="65.0" AnchorPane.rightAnchor="68.0" AnchorPane.topAnchor="260.0">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="267.0">
+                     <children>
+                    <AnchorPane layoutX="-1.0" layoutY="30.0" minHeight="0.0" minWidth="0.0" prefHeight="96.0" prefWidth="270.0">
+                           <children>
+                              <Button layoutX="6.0" layoutY="73.0" mnemonicParsing="false" onAction="#SaveConnectButton" prefHeight="24.0" prefWidth="256.0" style="-fx-background-color: '4a4a4a'; -fx-border-color: ffffff; -fx-border-radius: 5px; -fx-border-style: groove;" text="Login" textFill="WHITE" />
+                              <PasswordField fx:id="dbPassword" layoutX="6.0" layoutY="43.0" promptText="Password" />
+                              <TextField fx:id="dbUsername" layoutX="6.0" layoutY="12.0" prefHeight="24.0" prefWidth="257.0" promptText="Username" />
+                              <CheckBox fx:id="dbSaveLoginBox" layoutX="191.0" layoutY="47.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="80.0" text="Save?" textFill="WHITE" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane minHeight="700.0" minWidth="200.0" prefHeight="700.0" prefWidth="200.0" style="-fx-background-color: 90a4be;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="275.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="275.0">
+               <image>
+                  <Image url="@../finki_logo.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </right>
+</BorderPane>
